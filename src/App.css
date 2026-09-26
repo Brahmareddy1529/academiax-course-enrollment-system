@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef4ff;
+  color: #1e293b;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* ================= LOGIN ================= */
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #dbeafe, #eff6ff);
+}
+
+.login-card {
+  width: 380px;
+  background: white;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 10px 35px rgba(37, 99, 235, 0.18);
+  text-align: center;
+}
+
+.login-card h1 {
+  color: #2563eb;
+  margin-bottom: 10px;
+  font-size: 38px;
+}
+
+.login-card h2 {
+  color: #334155;
+  margin-bottom: 30px;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  font-size: 15px;
+  outline: none;
+}
+
+.login-card input:focus {
+  border-color: #2563eb;
+}
+
+.login-card button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 9px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-card button:hover {
+  background: #1d4ed8;
+}
+
+/* ================= DASHBOARD ================= */
+
+.dashboard {
+  min-height: 100vh;
+  padding: 35px 60px;
+  background: #f8fafc;
+}
+
+/* Header */
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 48px;
+  color: #2563eb;
+}
+
+.dashboard-header p {
+  margin-top: 8px;
+  color: #64748b;
+  font-size: 18px;
+}
+
+.dashboard h2 {
+  text-align: center;
+  color: #1e293b;
+  margin-bottom: 30px;
+}
+
+/* ================= COURSE CARDS ================= */
+
+.course-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.course-card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  border-top: 5px solid #2563eb;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.15);
+}
+
+.course-card h3 {
+  color: #2563eb;
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.course-card p {
+  color: #475569;
+  margin: 12px 0;
+  font-size: 15px;
+}
+
+.course-card b {
+  color: #1e293b;
+}
+
+.course-card button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.course-card button:hover {
+  background: #1d4ed8;
+}
+
+/* ================= SUCCESS ================= */
+
+.success-card {
+  max-width: 500px;
+  margin: 70px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 10px 35px rgba(15, 23, 42, 0.1);
+}
+
+.success-card h2 {
+  color: #16a34a;
+}
+
+.success-card h3 {
+  color: #2563eb;
+  font-size: 24px;
+}
+
+.success-card p {
+  color: #475569;
+  font-size: 16px;
+  margin: 12px;
+}
+
+/* Payment */
+
+.payment-button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 9px;
+  background: #16a34a;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.payment-button:hover {
+  background: #15803d;
+}
+
+/* Back */
+
+.back-button {
+  padding: 10px 18px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  background: #64748b;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background: #475569;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+  .course-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .course-container {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard {
+    padding: 20px;
+  }
+
+  .dashboard-header h1 {
+    font-size: 36px;
+  }
+}
