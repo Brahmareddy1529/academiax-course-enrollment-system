@@ -1,0 +1,31 @@
+﻿# Eclipse
+.metadata/
+.settings/
+.classpath
+.project
+
+# Maven
+target/
+
+# Java
+*.class
+
+# Logs
+*.log
+
+# Environment / secrets
+.env
+application-local.properties
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Old / unrelated projects
+eureka-server/
+payment-service-1/
+BankingJwtAuthentication/
+.metadata/
